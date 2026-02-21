@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans  xmlns="http://www.springframework.org/schema/beans"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean class="com.springcore.ci.Certi" name="cer">
+        <constructor-arg>
+            <value>java is a very popular programming language</value>
+        </constructor-arg>
+    </bean>
+
+
+
+<bean class="com.springcore.ci.Person" name="Person">
+    <constructor-arg>
+        <value>Komal</value>
+    </constructor-arg>
+
+    <constructor-arg>
+        <value>12</value>
+    </constructor-arg>
+
+    <constructor-arg ref="cer"/>
+
+
+
+</bean>
+
+     </beans>
+
+<!-- this is an example of constructor injection-->
