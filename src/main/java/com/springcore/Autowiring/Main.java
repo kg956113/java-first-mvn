@@ -10,6 +10,5 @@ public class Main {
 
       Employee emp1= (Employee) context.getBean("emp1");
         System.out.println(emp1);
-        System.out.println(emp1);
     }
 }
