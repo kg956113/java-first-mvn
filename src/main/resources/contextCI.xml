@@ -20,12 +20,14 @@
         <value>12</value>
     </constructor-arg>
 
-    <constructor-arg ref="cer"/>
+<!--    <constructor-arg ref="cer"/>-->
 
-
+    <constructor-arg>
+        <ref bean="cer"/>
+    </constructor-arg>
 
 </bean>
 
+
      </beans>
 
-<!-- this is an example of constructor injection-->
