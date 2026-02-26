@@ -9,6 +9,7 @@ public class Main {
                 new ClassPathXmlApplicationContext("Autowiring.xml");
 
       Employee emp1= (Employee) context.getBean("emp1");
+        System.out.println("------");
         System.out.println(emp1);
     }
 }
